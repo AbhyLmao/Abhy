@@ -24,8 +24,8 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
   line-height: 76.19px;
 
   transition: 1s;
@@ -109,11 +109,13 @@ span{
   border-radius: 100%;
   border: #000000 4px solid;
   margin-right: 40px;
+
+  transition: 1s;
 }
 
 .containerlol{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
 
   transition: 1s;
 }
@@ -136,20 +138,24 @@ span{
     padding-bottom: 20%;
     flex-direction: column;
     justify-content: center;
-
+    transition: 1s;
 
   }
   .hometext{
     max-width: 80%;
+    transition: 1s;
   }
   .profilelol{
     margin-right: 0px;
+    transition: 1s;
   }
   .imagecontainer{
     padding: 20px;
+    transition: 1s;
   }
   .hometext h1{
     text-align: center;
+    transition: 1s;
   }
   .headlol{
     
@@ -176,6 +182,29 @@ span{
     align-items: center;
     margin-left: 25%;
     margin-right: 25%;
+    transition: 1s;
     
+  }
+}
+@media(max-width: 605px){
+  .hometext h1{
+    font-size: 30px;
+    transition: 1s;
+  }
+}
+
+@media(max-width: 450px){
+  
+  .hometext p{
+    font-size: 18px;
+    font-weight: 500;
+    transition: 1s;
+  }
+  .profilelol{
+    width: 200px;
+    height: 200px;
+    margin-right: 0px;
+
+    transition: 1s;
   }
 }

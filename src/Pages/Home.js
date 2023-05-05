@@ -11,8 +11,7 @@ function Home() {
                 <h1>Hello! I'm Claire</h1>
                 <p>
                     Hiya!, I'm a web developer and engineering student. 
-                    I'm passionate about creating beautiful and functional websites using my design and coding skills. 
-                    
+                    I'm passionate about creating beautiful and functional websites using my design and coding skills.
                 </p>
             </div>
         </div>
