@@ -1,11 +1,181 @@
-body {
-  margin: 0;
-  font-family:sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  /* --lines: #622fad;
+  --texts : #c29aff;
+  --back : #eae0fa; */
+
+  --lines: #000000;
+  --texts : #363636;
+  --back : #c4c4c4;
+  font-family: Monospace;
+  font-size: 20px;
+  background: var(--back);
+  color: var(--lines);
+
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.headlol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 76.19px;
+
+  transition: 1s;
+}
+.headbuttons{
+  display: flex;
+}
+
+.namelol{
+  font-size: 30px;
+  user-select: none;
+  width: 272px;
+  text-align: center;
+}
+
+.material-symbols-outlined{
+  font-size: 35px;
+}
+a{
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+}
+a:link{
+  color: var(--lines);
+}
+a:visited{
+  color: var(--lines);
+}
+a:hover{
+  color: var(--lines);
+}
+a:active{
+  color: var(--lines);
+}
+.darkbutton{
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+}
+span{
+  text-align: center;
+  user-select: none;
+}
+.buttonlol{
+  
+  margin: 5px;
+  border: #00000000 4px solid;
+  border-radius: 35%;
+  width: 50px;
+  height: 50px;
+  user-select: none;
+}
+.buttonlol:hover{
+  border: var(--texts) 4px solid;
+  background: #0000001c;
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+  cursor: pointer;
+  user-select: none;
+}
+.buttonlol:hover a{
+  color: black;
+  transition: 1s;
+  cursor: pointer;
+  
+}
+.buttonlol:hover label{
+  color: black;
+  transition: 1s;
+  cursor: pointer;
+  
+}
+
+.profilelol{
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: #000000 4px solid;
+  margin-right: 40px;
+}
+
+.containerlol{
+  margin-left: 25%;
+  margin-right: 25%;
+
+  transition: 1s;
+}
+.homecontent{
+  display: flex;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  justify-content: space-between;
+}
+.hometext{
+  max-width: 60%;
+}
+
+@media(max-width: 1365px) {
+
+  .homecontent{
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
+  .hometext{
+    max-width: 80%;
+  }
+  .profilelol{
+    margin-right: 0px;
+  }
+  .imagecontainer{
+    padding: 20px;
+  }
+  .hometext h1{
+    text-align: center;
+  }
+  .headlol{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 1s;
+    
+  }
+  .containerlol{
+    margin-left: 10%;
+    margin-right: 10%;
+
+    transition: 1s;
+  }
+}
+
+
+
+@media(max-width: 750px){
+  .headlol{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+  }
 }
