@@ -1,38 +1,52 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <div className='headlol'>
 
-      <div className='headname'>
+      <div className='headname' >
+        
         <h1 className='namelol'>Clairo.dev</h1>
+        
       </div>
 
 
       <div className='headbuttons'>
+      
+        <div className='buttonlol'>
+          <Link  to='/'>
+            <span className="material-symbols-outlined">
+              cottage
+            </span>
+          </Link>
+        </div>
+
         
         <div className='buttonlol'>
-        <a href='youtube.com'>
+        <Link to='/projects'>
           <span className="material-symbols-outlined">
             rocket_launch
           </span>
-        </a>
+        </Link>
         </div>
+
         <div className='buttonlol'>
-        <a>
+        <Link  to='/'>
           <span className="material-symbols-outlined">
             history_edu
           </span>
-        </a>
+        </Link>
         </div>
+
         <div className='buttonlol'>
-        <a>
+        <Link to='/about'>
           <span className="material-symbols-outlined">
             sentiment_content
           </span>
-        </a>
+        </Link>
         </div>
+
         <div className='buttonlol'>
         <label className='darkbutton'>
           <span className="material-symbols-outlined">

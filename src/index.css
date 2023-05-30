@@ -1,31 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Sora:400,700,800");
+
 body{
   /* --lines: #622fad;
   --texts : #c29aff;
   --back : #eae0fa; */
 
-  --lines: #000000;
+  /* --lines: #000000;
   --texts : #363636;
-  --back : #c4c4c4;
-  font-family: Monospace;
+  --back : #c4c4c4; */
+
+  /* --lines: #eb6f92;
+  --texts : #ebbcba;
+  --back : #1f1d2e; */
+
+  /* --lines: #c4a7e7;
+  --texts : #e0def4;
+  --back : #191724; */
+
+  --base:#191724;
+  --surface:#1f1d2e;
+  --overlay:#26233a;
+  --muted:#6e6a86;
+  --subtle:#908caa;
+  --text:#e0def4;
+  --love:#eb6f92;
+  --gold:#f6c177;
+  --rose:#ebbcba;
+  --pine:#31748f;
+  --foam:#9ccfd8;
+  --iris:#c4a7e7;
+  --low:#21202e;
+  --med:#403d52;
+  --high:#524f67;
+  font-family: "Manrope";
   font-size: 20px;
-  background: var(--back);
-  color: var(--lines);
+  background: var(--surface);
+  color: var(--iris);
 
   
 }
 
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 
 .headlol{
+  color: var(--text);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 19%;
+  margin-right: 19%;
   line-height: 76.19px;
 
   transition: 1s;
@@ -35,10 +78,13 @@ code {
 }
 
 .namelol{
-  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 2em;
   user-select: none;
   width: 272px;
   text-align: center;
+  text-decoration: none
 }
 
 .material-symbols-outlined{
@@ -51,16 +97,16 @@ a{
   text-align: center;
 }
 a:link{
-  color: var(--lines);
+  color: var(--text);
 }
 a:visited{
-  color: var(--lines);
+  color: var(--text);
 }
 a:hover{
-  color: var(--lines);
+  color: var(--text);
 }
 a:active{
-  color: var(--lines);
+  color: var(--text);
 }
 .darkbutton{
   width: 50px;
@@ -82,8 +128,8 @@ span{
   user-select: none;
 }
 .buttonlol:hover{
-  border: var(--texts) 4px solid;
-  background: #0000001c;
+  border: var(--rose) 4px solid;
+  background: #ffffff10;
   width: 50px;
   height: 50px;
   transition: 1s;
@@ -91,7 +137,7 @@ span{
   user-select: none;
 }
 .buttonlol:hover a{
-  color: black;
+  color: var(--rose);
   transition: 1s;
   cursor: pointer;
   
@@ -103,17 +149,26 @@ span{
   
 }
 
+.hometext h1{
+  color: var(--gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  transition: 1s;
+}
+
 .profilelol{
   width: 250px;
   height: 250px;
   border-radius: 100%;
-  border: #000000 4px solid;
+  border: var(--foam) 4px solid;
   margin-right: 40px;
-
+  margin-left: 40px;
+  animation: morph 8s ease-in-out infinite;
   transition: 1s;
 }
 
 .containerlol{
+  color: var(--text);
   margin-left: 20%;
   margin-right: 20%;
 
@@ -123,7 +178,7 @@ span{
   display: flex;
   padding-top: 20%;
   padding-bottom: 20%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .hometext{
   max-width: 60%;
@@ -147,6 +202,7 @@ span{
   }
   .profilelol{
     margin-right: 0px;
+    margin-left: 0px;
     transition: 1s;
   }
   .imagecontainer{
@@ -204,7 +260,7 @@ span{
     width: 200px;
     height: 200px;
     margin-right: 0px;
-
+    margin-left: 0px;
     transition: 1s;
   }
 }
