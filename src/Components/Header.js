@@ -7,7 +7,7 @@ function Header() {
 
       <div className='headname' >
         
-        <h1 className='namelol'>Clairo.dev</h1>
+        <h1 className='namelol'>Abhy.dev</h1>
         
       </div>
 

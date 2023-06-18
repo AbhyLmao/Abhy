@@ -1,4 +1,5 @@
 import React from 'react'
+import Projecthome from '../Components/Projecthome'
 
 function Home() {
   return (
@@ -20,7 +21,7 @@ function Home() {
 
         </div>
         <div className='homeProjects'>
-          
+          <Projecthome/>
         </div>
         </div>
     </div>
