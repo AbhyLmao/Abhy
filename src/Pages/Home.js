@@ -10,7 +10,7 @@ function Home() {
             <img src='https://avatars.githubusercontent.com/u/95217195?v=4' className='profilelol'/>
             </div>
             <div className='hometext'>
-                <h1>Hello! I'm Claire</h1>
+                <h1>Hello! I'm Abhy test</h1>
                 <p>
                     Hiya!, I'm a passionate Web developer and a 3rd year engineering student. 
                     I am based in Calgary, AB📍
