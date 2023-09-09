@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800");
 @import url("https://fonts.googleapis.com/css?family=Sora:400,700,800");
-
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 body{
   /* --lines: #622fad;
   --texts : #c29aff;
@@ -19,6 +19,10 @@ body{
   --texts : #e0def4;
   --back : #191724; */
 
+  
+
+ 
+
   --base:#191724;
   --surface:#1f1d2e;
   --overlay:#26233a;
@@ -34,12 +38,39 @@ body{
   --low:#21202e;
   --med:#403d52;
   --high:#524f67;
+
   font-family: "Manrope";
   font-size: 20px;
   background: var(--surface);
   color: var(--iris);
-
   
+  transition: 0.5s;
+  
+}
+
+.light{
+  --base:#faf4ed;
+  --surface:#fffaf3;
+  --overlay:#f2e9e1;
+  --muted:#9893a5;
+  --subtle:#797593;
+  --text:#575279;
+  --love:#b4637a;
+  --gold:#ea9d34;
+  --rose:#d7827e;
+  --pine:#286983;
+  --foam:#56949f;
+  --iris:#907aa9;
+  --low:#f4ede8;
+  --med:#dfdad9;
+  --high:#cecacd;
+
+  transition: 0.5s;
+}
+
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 @keyframes morph {
@@ -60,6 +91,134 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+
+.imagecontainer{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 1s;
+}
+
+
+@keyframes background-pan {
+  from{
+    background-position: 0% center;
+  }
+  to{
+    background-position: -200% center;
+  }
+}
+
+
+
+.magic{
+  
+  animation: background-pan 1s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--love),
+    var(--gold),
+    var(--rose),
+    var(--pine),
+    var(--love)
+    /* var(--foam),
+    var(--foam),
+    var(--love),
+    var(--love),
+    var(--text),
+    var(--text),
+    var(--love),
+    var(--love),
+    var(--foam),
+    var(--foam) */
+  );
+
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+
+}
+
+
+.hometext h1{
+  
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  transition: 1s;
+  
+}
+
+.profilelol{
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: var(--love) 4px solid;
+  margin-right: 40px;
+  margin-left: 40px;
+  animation: morph 8s ease-in-out infinite;
+  transition: 1s;
+}
+
+.containerlol{
+  color: var(--text);
+  margin-left: 20%;
+  margin-right: 20%;
+
+  transition: 1s;
+}
+.homecontent{
+  display: flex;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  justify-content: space-around;
+  transition: 1s;
+}
+
+.hometext{
+  max-width: 60%;
+  transition: 1s;
+  font-size: 25px;
+}
+
+.PageHeader{
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+}
+
+
+
+
+
+/* PROJECTS PAGE CSS */
+
+.ProjectContainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: var(--text);
+  margin-left: 20%;
+  margin-right: 20%;
+
+  transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .headlol{
@@ -118,18 +277,22 @@ span{
   text-align: center;
   user-select: none;
 }
+
+
 .buttonlol{
-  
+
   margin: 5px;
-  border: #00000000 4px solid;
+  border: #00000000 3px solid;
   border-radius: 35%;
   width: 50px;
   height: 50px;
   user-select: none;
+  transition: 1s;
 }
 .buttonlol:hover{
-  border: var(--rose) 4px solid;
+  border: var(--rose) 3px solid;
   background: #ffffff10;
+  padding: 5px;
   width: 50px;
   height: 50px;
   transition: 1s;
@@ -143,48 +306,43 @@ span{
   
 }
 .buttonlol:hover label{
-  color: black;
+  color: var(--rose);
   transition: 1s;
   cursor: pointer;
   
 }
 
-.hometext h1{
-  color: var(--gold);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  transition: 1s;
-}
 
-.profilelol{
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  border: var(--foam) 4px solid;
-  margin-right: 40px;
-  margin-left: 40px;
-  animation: morph 8s ease-in-out infinite;
-  transition: 1s;
-}
 
-.containerlol{
-  color: var(--text);
-  margin-left: 20%;
-  margin-right: 20%;
 
-  transition: 1s;
-}
-.homecontent{
-  display: flex;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  justify-content: space-around;
-}
-.hometext{
-  max-width: 60%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 1365px) {
+
+  .ProjectContainer{
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+    
+  }
+ 
+
+
 
   .homecontent{
     display: flex;
@@ -210,6 +368,7 @@ span{
     transition: 1s;
   }
   .hometext h1{
+    
     text-align: center;
     transition: 1s;
   }
@@ -228,9 +387,26 @@ span{
   }
 }
 
+@media (max-width: 980px) {
+  .ProjectContainer{
+    margin-left: 0%;
+    margin-right: 5%;
+  }
+}
 
 
 @media(max-width: 750px){
+  .PageHeader{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 1s;
+  }
+  
+  .namelol{
+    line-height: normal;
+    margin-bottom: 5px;
+    transition: 1s;
+  }
   .headlol{
     display: flex;
     flex-direction: column;
@@ -242,7 +418,7 @@ span{
     
   }
 }
-@media(max-width: 605px){
+@media(max-width: 630px){
   .hometext h1{
     font-size: 30px;
     transition: 1s;
@@ -250,6 +426,12 @@ span{
 }
 
 @media(max-width: 450px){
+
+  .namelol{
+    font-size: 1.5em;
+  }
+
+  
   
   .hometext p{
     font-size: 18px;

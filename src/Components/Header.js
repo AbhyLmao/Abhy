@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Header() {
+  
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const handleDarkModeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('light');
+  };
+
   return (
+
+    
     <div className='headlol'>
 
       <div className='headname' >
         
-        <h1 className='namelol'>Abhy.dev</h1>
+        <h1 className='namelol'><span className='magiclol'>Poggies</span></h1>
         
       </div>
 
@@ -47,7 +57,7 @@ function Header() {
         </Link>
         </div>
 
-        <div className='buttonlol'>
+        <div className='buttonlol' onClick={handleDarkModeToggle}>
         <label className='darkbutton'>
           <span className="material-symbols-outlined">
            dark_mode
