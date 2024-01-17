@@ -1,5 +1,9 @@
 /* PROJECTS PAGE CSS */
 
+.type{
+  width: 60%;
+}
+
   .Project{
     border: var(--rose) 4px solid;
     border-radius: 25px;
@@ -9,18 +13,21 @@
     margin-left: 5%;
     margin-right: 5%;
     
-    width: 70%;
+    min-width: 75%;
+    
     max-height: 300px;
   
     transition: 1s;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   .Project-title{
     font-size: 30px;
     font-family: monospace;
+    width: 75%;
     padding: 10px;
     color: var(--text);
     font-weight: 900;
@@ -75,7 +82,10 @@
     transition: 1s;
     }
 
-}
+  }
+
+
+
 
 @media(max-width: 750px){
 
@@ -90,4 +100,17 @@
       font-size: 14px;
       transition: 1s;
     }
+}
+
+@media(max-width: 450px){
+  .Project-title{
+    font-size: 18px;
+    transition: 1s;
+  }
+
+  .Project-body{
+    font-size: 12px;
+    transition: 1s;
+  }
+  
 }

@@ -7,6 +7,7 @@ import Projects from "./Pages/Projects";
 function App() {
   return (
     <div className="App">
+      
         <Header />
         <div className="bodylol">
         <Routes>
@@ -14,7 +15,8 @@ function App() {
           <Route path="/About" element = {<About />} />
           <Route path="/Projects" element = {<Projects />} />
         </Routes>
-        </div>
+        
+      </div>
     </div>
   );
 }

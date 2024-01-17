@@ -1,0 +1,19 @@
+.aboutclass{
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.abouttext{
+    flex-wrap: wrap;
+    color: var(--text);
+    padding-right: 100px;
+    transition: 1s;
+}
+.aboutimg{
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10%;
+    
+}
