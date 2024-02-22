@@ -54,6 +54,12 @@ body{
   
   
 }
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* min-height: -webkit-fill-available; */
+}
 
 .light{
   --base:#faf4ed;
@@ -108,6 +114,10 @@ code {
 }
 
 
+.bodylol{
+  flex-grow: 1;
+
+}
 @keyframes background-pan {
   from{
     background-position: 0% center;
@@ -148,6 +158,25 @@ code {
 
 }
 
+/* .magic2{
+  
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--love),
+    var(--iris),
+    var(--foam),
+    var(--foam),
+    var(--iris),
+    var(--love)
+  );
+
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+
+} */
 
 .hometext h1{
   
@@ -177,12 +206,16 @@ code {
 }
 .homecontent{
   display: flex;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 10%;
+  padding-bottom: 15%;
   justify-content: space-around;
   transition: 1s;
 }
-
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 .hometext{
   max-width: 60%;
   transition: 1s;
@@ -243,7 +276,7 @@ code {
 .headlol{
   color: var(--text);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-left: 19%;
   margin-right: 19%;
@@ -334,7 +367,9 @@ span{
 
 
 
-
+.homeprojects{
+  margin-left: 40px;
+}
 
 
 

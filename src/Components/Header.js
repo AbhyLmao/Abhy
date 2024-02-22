@@ -22,7 +22,7 @@ function Header() {
       </div>
 
 
-      <div className='headbuttons'>
+      {/* <div className='headbuttons'>
       
         <div className='buttonlol'>
           <Link  to='/'>
@@ -64,7 +64,7 @@ function Header() {
           </span>
         </label>
         </div>
-      </div>
+      </div> */}
               
     </div>
     
