@@ -55,7 +55,7 @@ function Header() {
             sentiment_content
           </span>
         </Link>
-        </div>
+        </div> */}
 
         <div className='buttonlol' onClick={handleDarkModeToggle}>
         <label className='darkbutton'>
@@ -64,7 +64,7 @@ function Header() {
           </span>
         </label>
         </div>
-      </div> */}
+      {/* </div> */}
               
     </div>
     
