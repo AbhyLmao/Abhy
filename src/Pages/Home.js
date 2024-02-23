@@ -18,7 +18,7 @@ function Home() {
                     <br/>    
                     Check out my Github, all of my projects are there!
                     I have worked with technologies like AWS, Terraform, React, Python, C/C++, and Java. 
-                    <br /><br />And feel free to contant me :) 
+                    <br /><br />And feel free to contact me :) 
                     
                 </p>
             </div>
