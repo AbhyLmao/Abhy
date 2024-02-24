@@ -16,6 +16,7 @@
     text-decoration: none;
     outline-color: transparent;
     text-align: center;
+
     transition: 1s;
 
 }
@@ -27,3 +28,19 @@ a:hover{
     transition: 1s;
     cursor: pointer;
 }
+@media(max-width: 500px){
+
+    .mylinks {
+        flex-direction: column;
+        text-decoration: underline;
+    }
+    
+    .linklol:nth-child(even) {
+        margin-left: 50%;
+    }
+    
+    .linklol:nth-child(odd) {
+        margin-right: auto;
+    }
+}
+
