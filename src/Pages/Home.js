@@ -13,12 +13,12 @@ function Home() {
             <div className='hometext'>
                 <h1><span className='magic'>Hello! I'm Abhy</span></h1>
                 <p>
-                    I'm a passionate software developer and a 3rd year engineering student based in Calgary, AB
+                    I'm a passionate software developer and a 3rd year engineering student based in Calgary, AB&nbsp; 🇨🇦
                     <br/>
                     <br/>    
                     Check out my Github, all of my projects are there!
                     I have worked with technologies like AWS, Terraform, React, Python, C/C++, and Java. 
-                    <br /><br />And feel free to contact me :) 
+                    <br /><br />And feel free to contact me&nbsp;&nbsp;&nbsp; ❤️
                     
                 </p>
             </div>
