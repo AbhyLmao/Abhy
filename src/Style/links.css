@@ -41,6 +41,9 @@ a:hover{
     
     .linklol:nth-child(odd) {
         margin-right: auto;
+        margin-left: 10%;
     }
+
+
 }
 
