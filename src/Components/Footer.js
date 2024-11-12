@@ -7,7 +7,7 @@ export default function Footerlol() {
     <footer>
     
       <div className='bootom'>
-      °˖✧˚ʚ &nbsp;&nbsp;&nbsp;love is lost&nbsp;&nbsp;&nbsp;  ɞ˚✧˖°
+      °˖✧˚ʚ &nbsp;&nbsp;&nbsp;Back like I never left&nbsp;&nbsp;&nbsp;  ɞ˚✧˖°
       </div>
 
     </footer>
